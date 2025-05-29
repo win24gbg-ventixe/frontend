@@ -1,0 +1,132 @@
+.event-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 24px;
+  gap: 12px;
+}
+
+.event-details-container {
+  width: 650px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.event-details-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.event-details-title {
+  font-size: 24px;
+  color: var(--grey-100);
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.event-details-meta {
+  font-size: 14px;
+  color: var(--Grey-100);
+}
+
+.event-details-price {
+  color: var(--primary-100);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.event-details-description h5 {
+  color: var(--secondary-100);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.event-details-description p {
+  color: #434345;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.event-details-hero-header {
+  height: 350px;
+  background: var(--grey-40);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.event-details-body {
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.event-details-terms-box {
+  background-color: var(--grey-10);
+  padding: 24px;
+  border-radius: 16px;
+  width: 650px;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.event-details-terms-box ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.event-details-terms-box li {
+  font-size: 14px;
+  color: var(--grey-100);
+  margin-bottom: 6px;
+}
+
+.event-terms-box::-webkit-scrollbar {
+  width: 6px;
+}
+.event-terms-box::-webkit-scrollbar-thumb {
+  background-color: var(--primary-100);
+  border-radius: 3px;
+}
+.event-terms-box::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.event-details-divider {
+  margin: 20px 0;
+}
+
+.grey-text {
+  color: var(--grey-80);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: var(--fw-regular);
+}
+
+.event-details-book-button {
+  background-color: var(--primary-100);
+  color: white;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+  margin-block: 32px;
+}
+
+.event-details-book-button:hover {
+  background-color: var(--primary-90);
+}

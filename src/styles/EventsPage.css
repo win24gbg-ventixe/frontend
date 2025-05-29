@@ -1,0 +1,20 @@
+.events-container-outer {
+  background-color: var(--grey-20);
+  border-radius: var(--border-radius);
+  padding: 12px;
+  margin: 12px;
+  box-sizing: border-box;
+}
+
+.events-container-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.events-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}

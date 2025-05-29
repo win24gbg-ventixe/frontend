@@ -1,0 +1,86 @@
+:root {
+
+  /* Primary (Lila/rosa) */
+  --primary-100: #f26cf9;
+  --primary-90: #f589fa;
+  --primary-50: #fcd3fe;
+  --primary-40: #fce2fe;
+  --primary-30: #fedeff;
+
+  /* Secondary (Lila/blå) */
+  --secondary-110: #1c2346;
+  --secondary-100: #37347d;
+  --secondary-90: #5562a2;
+  --secondary-70: #707dbf;
+  --secondary-60: #ab84dd;
+  --secondary-50: #d3daf9;
+
+  /* Yellow */
+  --yellow-100: #ffca39;
+  --yellow-90: #ffefc3;
+
+  /* Greys */
+  --grey-10: #ffffff;
+  --grey-20: #f7f7f7;
+  --grey-30: #ededed;
+  --grey-40: #e0e0e1;
+  --grey-50: #c3c3c4;
+  --grey-60: #9f9fa1;
+  --grey-70: #777779;
+  --grey-80: #636365;
+  --grey-90: #434345;
+  --grey-100: #1e1e20;
+
+  /* Cool Grey */
+  --cool-grey-10: #eeefff;
+  --cool-grey-20: #e4e5f5;
+  --cool-grey-30: #ddddee;
+  --cool-grey-40: #d1d2e0;
+  --cool-grey-50: #b6b1bd;
+  --cool-grey-60: #8f8f99;
+  --cool-grey-70: #72737a;
+  --cool-grey-80: #56565c;
+  --cool-grey-90: #39393d;
+  --cool-grey-100: #131314;
+
+  /* Typography Base */
+  --font-family: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --font-h1: 32px;
+  --font-h2: 28px;
+  --font-h3: 26px;
+  --font-h4: 24px;
+  --font-h5: 22px;
+  --font-h6: 20px;
+
+  --font-title-lg: 18px;
+  --font-title-md: 16px;
+  --font-title-sm: 14px;
+  --font-title-xs: 12px;
+
+  --font-body-lg: 16px;
+  --font-body-md: 14px;
+  --font-body-sm: 12px;
+
+  --font-btn: 14px;
+
+  /* === Font Weights === */
+  --fw-thin: 100;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+
+  /* Radius & Shadow */
+  --border-radius: 14px;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: var(--font-family);
+}
