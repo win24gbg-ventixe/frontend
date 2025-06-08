@@ -2,29 +2,37 @@ import '../../styles/BookingModal.css';
 import { useState } from 'react';
 import type { Event } from '../../models/EventModel';
 import { formatDateTime } from '../../utils/formatDateTime';
+import { createBooking } from '../../services/BookingService';
 
 type BookingModalProps = {
   event: Event;
   onClose: () => void;
-  onSubmit: (data: any) => void;
   isGuest: boolean;
 }
 
 
-const BookingModal = ({ event, onClose, onSubmit, isGuest }: BookingModalProps) => {
+const BookingModal = ({ event, onClose, isGuest }: BookingModalProps) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
 
-    const handleSubmit = () => {
-        const bookingData = { firstName, lastName }
-        if (isGuest) {
-            onSubmit({ ...bookingData, email })
-        } else {
-            onSubmit(bookingData)
-        }
-        onClose()
-    }
+    const handleSubmit = async () => {
+      const bookingData = {
+        eventId: event.id,
+        firstName,
+        lastName,
+        email: isGuest ? email : undefined
+      };
+
+      try {
+        await createBooking(bookingData);
+        alert('Booking successful!');
+        onClose();
+      } catch (error) {
+        console.error('Booking failed:', error);
+        alert('Something went wrong while booking.');
+      }
+  };
 
     return (
     <div className="booking-modal-backdrop">

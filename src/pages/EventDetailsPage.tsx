@@ -15,13 +15,9 @@ const EventDetailsPage = () => {
   const [showModal, setShowModal] = useState(false)
   const isGuest = true
 
-  const handleBooking = (data: any) => {
-    console.log('Booking data:', data)
-}
-
   useEffect(() => {
     const fetchEvent = async () => {
-      const res = await fetch(`https://localhost:7169/api/events/${id}`)
+      const res = await fetch(`https://ecutb-laine-eventservice-c6caedbwabb6faam.swedencentral-01.azurewebsites.net/api/events/${id}`)
       if (res.ok) {
         const data = await res.json()
         setEvent(data)
@@ -79,7 +75,6 @@ const EventDetailsPage = () => {
             <BookingModal
               event={event}
               onClose={() => setShowModal(false)}
-              onSubmit={handleBooking}
               isGuest={isGuest}
             />
           )}

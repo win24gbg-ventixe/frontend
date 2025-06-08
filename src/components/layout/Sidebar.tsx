@@ -12,10 +12,11 @@ const Sidebar = () => {
         </div>
 
         <nav className="sidebar-nav">
-          
+          {/*
             <NavLink to="/bookings" className="sidebar-link">
                 <i className="bi bi-check-square sidebar-icon" /> Bookings
             </NavLink>
+          */}
             <NavLink to="/events" className="sidebar-link">
                 <i className="bi bi-ticket-perforated sidebar-icon" /  > Events
             </NavLink>
@@ -23,9 +24,12 @@ const Sidebar = () => {
         </nav>
       </div>
 
+      {/*
       <div className="sidebar-bottom">
         <button className="btn btn-outline-secondary w-100">Sign Out</button>
       </div>
+      */}
+      
     </aside>
   )
 }
