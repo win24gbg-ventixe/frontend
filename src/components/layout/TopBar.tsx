@@ -1,5 +1,5 @@
-import '../../Styles/AppLayout.css';
-import '../../Styles/TopBar.css';
+import '../../styles/AppLayout.css';
+import '../../styles/TopBar.css';
 import { useTopBar } from '../../context/TopBarContext'
 
 const TopBar = () => {
@@ -10,7 +10,7 @@ const TopBar = () => {
     avatarUrl: '',
   }
     */}
-    
+
     return (
         <header className="top-bar d-flex justify-content-between align-items-center">
       <h4 className="topbar-title mb-0">{title}</h4>
